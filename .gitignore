@@ -1,0 +1,11 @@
+__pycache__
+.DS_Store
+*.swp
+trained_models/*
+dataset/cardboard/*
+dataset/glass/*
+dataset/metal/*
+dataset/paper/*
+dataset/plastic/*
+dataset/test/*
+dataset/trash/*

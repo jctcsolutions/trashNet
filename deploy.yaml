@@ -1,0 +1,11 @@
+description: Initial version of the Doc2Cat-L1 product description classification model.
+deploymentUri: gs://hubba_ml/productClassifiers/productClassifier/trained_models/doc2cat_l1_v1/export
+runtimeVersion: '1.4'
+# Only one of manualScaling or autoScaling must be specified. If both are
+# specified in same yaml file an error will be returned 
+# manualScaling:
+#   nodes: 10  # The number of nodes to allocate for this model.
+# autoScaling:
+#   minNodes: 1  # The minimum number of nodes to allocate for this model.
+# labels:
+#   user-defined-key: user-defined-value

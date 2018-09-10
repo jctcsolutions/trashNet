@@ -1,0 +1,44 @@
+trainingInput:
+  pythonVersion: "3.5"
+  scaleTier: BASIC_GPU # BASIC | BASIC_GPU | STANDARD_1 | PREMIUM_1
+######### example of custom scale tier config ##############
+  # scaleTier: CUSTOM
+  # masterType: large_model
+  # workerType: large_model
+  # parameterServerType: large_model
+  # workerCount: 0
+  # parameterServerCount: 0
+# ######### hyper-parameter tuning config (uncomment to run) ##############
+#   hyperparameters:
+#     goal: MINIMIZE #MINIMIZE | MAXIMIZE
+#     maxTrials: 30
+#     maxParallelTrials: 5
+#     enableTrialEarlyStopping: TRUE
+#     hyperparameterMetricTag: "val_loss"    
+#     params:
+#     - parameterName: first-layer-size
+#       type: INTEGER
+#       minValue: 100
+#       maxValue: 1000
+#       scaleType: UNIT_LINEAR_SCALE
+#     - parameterName: num-layers
+#       type: INTEGER
+#       minValue: 2
+#       maxValue: 6
+#       scaleType: UNIT_LINEAR_SCALE
+#     - parameterName: layer-sizes-scale-factor
+#       type: DOUBLE
+#       minValue: 0.3
+#       maxValue: 0.8
+#       scaleType: UNIT_LINEAR_SCALE
+#     - parameterName: learning-rate
+#       type: DOUBLE
+#       minValue: 0.0001
+#       maxValue: 0.01
+#       scaleType: UNIT_LOG_SCALE
+#     - parameterName: dropout-rate
+#       type: DOUBLE
+#       minValue: 0.1
+#       maxValue: 0.5
+#       scaleType: UNIT_LINEAR_SCALE
+#     # resumePreviousJobId: {JOB ID} #SPECIFY TO PICK UP FROM PREVIOUS HP-TUNNING JOB
