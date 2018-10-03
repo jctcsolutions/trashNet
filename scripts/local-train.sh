@@ -1,6 +1,9 @@
 #!/bin/bash
 echo "Training ML model locally, sourcing dataset locally"
 
+# set the tf-hub module cache directory
+export TFHUB_CACHE_DIR=./tfhub_cache
+
 PACKAGE_PATH=trainer
 VERSION="v1"
 MODEL_NAME=trashNet_${VERSION}

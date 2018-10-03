@@ -2,10 +2,11 @@ from setuptools import find_packages
 from setuptools import setup
 
 REQUIRED_PACKAGES = [
+    'numpy==1.15.2',
     'pandas==0.20.3',
     'Keras==2.1.3',
     'scikit-learn==0.19.1',
-    'tensorflow==1.8.0',
+    'tensorflow==1.11.0',
     'tensorflow_hub'
 ]
 
